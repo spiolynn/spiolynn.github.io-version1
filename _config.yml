@@ -1,7 +1,7 @@
 # Site settings
 title: Kellogg
 SEOTitle: 盘子的博客 | Kellogg
-header-img: img/post-bg-desk.jpg
+header-img: imgs/0_desk_bak.jpg
 email: hupanzi66@gmail.com
 description: "Our Conquest Is the Sea of Stars."
 keyword: "Our Conquest Is the Sea of Stars."
@@ -12,7 +12,7 @@ github_repo: "https://github.com/spiolynn/spiolynn.github.io.git" # you code rep
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: imgs/0_desk_bak.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
