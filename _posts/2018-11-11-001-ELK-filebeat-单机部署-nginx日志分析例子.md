@@ -40,7 +40,7 @@ wget https://download.elastic.co/kibana/kibana/kibana-4.6.6-linux-x86_64.tar.gz
 
 - 工具间关系
 
-```
+```mermaid
 graph LR
 A[logstash]-->B[elasticsearch]
 C[filebeat-1]-->A[logstash]
