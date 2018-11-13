@@ -289,13 +289,13 @@ update:
 
 - POST：自动生成唯一 _id
 - PUT: 
+
 ```
 #方法1
 PUT /website/blog/123?op_type=create
 #方法2
 PUT /website/blog/123/_create
 
----------------------- 冲突返回的错误
 {
    "error": {
       "root_cause": [
@@ -590,4 +590,3 @@ curl 'localhost:8021/_cluster/health?level=indices&pretty'
 
 
 ```
-
