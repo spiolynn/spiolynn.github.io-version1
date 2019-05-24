@@ -296,7 +296,7 @@ sincedb 文件中记录了每个被监听的文件的 inode, major number, minor
 
 - racs日志
 ```
-[CCB][racs][com.ccb.springboot.log.CommonLogger.info(CommonLogger.java:24)][2018-05-17 15:34:50 123][INFO ][userMessage=登录用户ID41071106]
+[panzi][racs][com.panzi.springboot.log.CommonLogger.info(CommonLogger.java:24)][2018-05-17 15:34:50 123][INFO ][userMessage=登录用户ID41071106]
 
 \[%{WORD:company}\]\[%{WORD:project}\]\[%{JAVAFILE:javapacket}\(%{JAVAFILE:classfile}\:%{NUMBER:classfileline}\)\]\[%{DEVTIMESTAMP_ISO8601:time}\]\[%{LOGLEVEL:level}%{GREEDYDATA:info}\]
 
@@ -346,7 +346,7 @@ DEVTIMESTAMP_ISO8601 %{YEAR}-%{MONTHNUM}-%{MONTHDAY}[T ]%{HOUR}:?%{MINUTE}(?::?%
 bin/logstash -f test.conf --config.test_and_exit
 bin/logstash -f test.conf
 
-echo "[CCB][racs][com.ccb.springboot.log.CommonLogger.info(CommonLogger.java:24)][2018-05-17 15:34:50 123][INFO ][userMessage=登录用户ID41071106]" >> log.log
+echo "[panzi][racs][com.panzi.springboot.log.CommonLogger.info(CommonLogger.java:24)][2018-05-17 15:34:50 123][INFO ][userMessage=登录用户ID41071106]" >> log.log
 ```
 
 - 将output改成数据库
@@ -388,7 +388,7 @@ filebeat.prospectors:
   paths:
     - /home/ap/dev/log/racs_app.log
 output.logstash:
-  hosts: ["10.128.13.25:8055"]
+  hosts: ["**.**.**.25:8055"]
 ```
 - 启动filebeat
 ```
